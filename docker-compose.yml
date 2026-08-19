@@ -1,0 +1,50 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dsr-app
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - dsr-network
+
+  db:
+    image: mysql:8.0
+    container_name: dsr-db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: db_sales_dsr
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "3307:3306"
+    volumes:
+      - dsr-db-data:/var/lib/mysql
+    networks:
+      - dsr-network
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: dsr-phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    networks:
+      - dsr-network
+
+volumes:
+  dsr-db-data:
+
+networks:
+  dsr-network:
+    driver: bridge

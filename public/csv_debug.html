@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Debug Tool</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .upload-area { border: 2px dashed #ccc; padding: 20px; margin: 20px 0; text-align: center; }
+        .debug-info { background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .error { background: #ffe6e6; color: #d00; }
+        .success { background: #e6ffe6; color: #080; }
+        table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSV Import Debug Tool</h1>
+        <p>Upload your CSV file here to debug the format and see why it's failing to import.</p>
+        
+        <div class="upload-area">
+            <input type="file" id="csvFile" accept=".csv">
+            <br><br>
+            <button onclick="debugCSV()">Debug CSV Format</button>
+        </div>
+        
+        <div id="debugResults"></div>
+    </div>
+
+    <script>
+        function debugCSV() {
+            const fileInput = document.getElementById('csvFile');
+            const file = fileInput.files[0];
+            
+            if (!file) {
+                alert('Please select a CSV file first');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const content = e.target.result;
+                const lines = content.split('\n').filter(line => line.trim());
+                
+                let html = '<div class="debug-info">';
+                html += '<h2>CSV Analysis Results</h2>';
+                
+                // Analyze header
+                const headerLine = lines[0];
+                const headers = parseCSVLine(headerLine);
+                
+                html += '<h3>Header Analysis</h3>';
+                html += '<p><strong>Expected headers:</strong></p>';
+                html += '<table><tr><th>Transaction ID</th><th>Date</th><th>Time</th><th>Product Name</th><th>Quantity</th><th>Price</th><th>Discount</th><th>Total</th><th>Customer Name</th><th>Payment Method</th></tr></table>';
+                
+                html += '<p><strong>Your headers:</strong></p>';
+                html += '<table><tr>';
+                headers.forEach(header => {
+                    html += `<th>${header}</th>`;
+                });
+                html += '</tr></table>';
+                
+                html += '<p><strong>Header count:</strong> ' + headers.length + ' columns</p>';
+                
+                // Check if headers match expected format
+                const expectedHeaders = ['Transaction ID', 'Date', 'Time', 'Product Name', 'Quantity', 'Price', 'Discount', 'Total', 'Customer Name', 'Payment Method'];
+                const headerMatch = expectedHeaders.every((header, index) => 
+                    headers[index] && headers[index].toLowerCase().includes(header.toLowerCase())
+                );
+                
+                if (headerMatch) {
+                    html += '<p class="success">✓ Headers match expected format</p>';
+                } else {
+                    html += '<p class="error">✗ Headers do not match expected format</p>';
+                }
+                
+                // Analyze first few data rows
+                html += '<h3>Data Row Analysis</h3>';
+                let validRows = 0;
+                let invalidRows = 0;
+                
+                for (let i = 1; i < Math.min(lines.length, 6); i++) {
+                    const row = parseCSVLine(lines[i]);
+                    html += `<h4>Row ${i + 1}:</h4>`;
+                    html += '<table><tr>';
+                    row.forEach(cell => {
+                        html += `<td>${cell}</td>`;
+                    });
+                    html += '</tr></table>';
+                    html += '<p><strong>Column count:</strong> ' + row.length + '</p>';
+                    
+                    // Validate this row
+                    const validation = validateRow(row, i + 1);
+                    if (validation.valid) {
+                        validRows++;
+                        html += '<p class="success">✓ This row would be imported successfully</p>';
+                    } else {
+                        invalidRows++;
+                        html += '<p class="error">✗ This row would fail: ' + validation.error + '</p>';
+                    }
+                    
+                    html += '<hr>';
+                }
+                
+                // Summary
+                html += '<h3>Summary</h3>';
+                html += '<p><strong>Total rows analyzed:</strong> ' + Math.min(lines.length - 1, 5) + '</p>';
+                html += '<p><strong>Valid rows:</strong> ' + validRows + '</p>';
+                html += '<p><strong>Invalid rows:</strong> ' + invalidRows + '</p>';
+                
+                if (invalidRows === 0) {
+                    html += '<p class="success">Your CSV format appears to be correct!</p>';
+                } else {
+                    html += '<p class="error">Your CSV has formatting issues that need to be fixed.</p>';
+                }
+                
+                html += '</div>';
+                document.getElementById('debugResults').innerHTML = html;
+            };
+            
+            reader.readAsText(file);
+        }
+        
+        function parseCSVLine(line) {
+            const result = [];
+            let current = '';
+            let inQuotes = false;
+            
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                
+                if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    result.push(current.trim());
+                    current = '';
+                } else {
+                    current += char;
+                }
+            }
+            
+            result.push(current.trim());
+            return result;
+        }
+        
+        function validateRow(row, rowNumber) {
+            if (row.length < 8) {
+                return { valid: false, error: 'Insufficient columns (need at least 8, found ' + row.length + ')' };
+            }
+            
+            const transactionId = row[0]?.trim();
+            const date = row[1]?.trim();
+            const time = row[2]?.trim();
+            const productName = row[3]?.trim();
+            const quantity = parseInt(row[4] || '0');
+            const price = parseFloat(row[5] || '0');
+            const total = parseFloat(row[7] || '0');
+            const paymentMethod = row[9]?.trim();
+            
+            if (!transactionId) return { valid: false, error: 'Missing Transaction ID' };
+            if (!date) return { valid: false, error: 'Missing Date' };
+            if (!time) return { valid: false, error: 'Missing Time' };
+            if (!productName) return { valid: false, error: 'Missing Product Name' };
+            if (!quantity || quantity <= 0) return { valid: false, error: 'Invalid Quantity' };
+            if (!price || price <= 0) return { valid: false, error: 'Invalid Price' };
+            if (!total || total <= 0) return { valid: false, error: 'Invalid Total' };
+            if (!paymentMethod) return { valid: false, error: 'Missing Payment Method' };
+            
+            return { valid: true };
+        }
+    </script>
+</body>
+</html>

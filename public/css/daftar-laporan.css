@@ -1,0 +1,501 @@
+:root{
+    --bg-color:#f9fafb;
+    --primary-green:#10b981;
+    --primary-blue:#2563eb;
+    --target-orange:#f97316;
+    --target-gray:#9ca3af;
+    --text-main:#111827;
+    --text-muted:#6b7280;
+    --text-dark:#1f2937;
+    --border-color:#e5e7eb;
+    --card-bg:#ffffff;
+    --font-family:'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    overflow-x:hidden;
+    background:var(--bg-color);
+    font-family:var(--font-family);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.dashboard-content{
+    width:100%;
+    padding:24px;
+    color:var(--text-main);
+}
+
+.container{
+    width:100%;
+    max-width:100%;
+    margin:0 auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    position:relative;
+    z-index:10;
+    margin-bottom:24px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.dashboard-card{
+    width:100%;
+    background:var(--card-bg);
+    border-radius:20px;
+    padding:28px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.laporan-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    margin-bottom:28px;
+    flex-wrap:wrap;
+}
+
+.laporan-header h2{
+    font-size:32px;
+    font-weight:700;
+    color:var(--text-dark);
+    margin-bottom:6px;
+}
+
+.subtitle{
+    font-size:14px;
+    color:var(--text-muted);
+}
+
+/* =========================
+   FILTER (dropdown status, kalau masih dipakai di tempat lain)
+========================= */
+
+.filter-form{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.filter-form select{
+    min-width:170px;
+    padding:12px 16px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    background:#fff;
+    font-size:14px;
+    color:#111827;
+    outline:none;
+    transition:0.2s ease;
+    cursor:pointer;
+}
+
+.filter-form select:focus{
+    border-color:var(--primary-blue);
+}
+
+/* =========================
+   TOGGLE FILTER BUTTON
+========================= */
+
+.toggle-filter-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 20px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    background:#fff;
+    font-size:14px;
+    font-weight:600;
+    color:var(--text-main);
+    cursor:pointer;
+    transition:0.2s ease;
+}
+
+.toggle-filter-btn:hover{
+    border-color:var(--primary-blue);
+    color:var(--primary-blue);
+}
+
+/* =========================
+   DATE FILTER BAR
+========================= */
+
+.date-filter-bar{
+    display:flex;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    gap:16px;
+    padding:20px 24px;
+    margin-bottom:24px;
+    background:var(--bg-color);
+    border:1px solid var(--border-color);
+    border-radius:16px;
+}
+
+.date-filter-group{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.date-filter-group label{
+    font-size:12px;
+    font-weight:600;
+    color:var(--text-muted);
+    line-height:1;
+}
+
+.date-filter-group input[type="date"],
+.date-filter-group select{
+    height:44px;
+    min-width:160px;
+    padding:0 14px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    background:#fff;
+    font-size:14px;
+    color:var(--text-main);
+    outline:none;
+    transition:0.2s ease;
+    cursor:pointer;
+    font-family:var(--font-family);
+}
+
+.date-filter-group input[type="date"]:focus,
+.date-filter-group select:focus{
+    border-color:var(--primary-blue);
+}
+
+.date-filter-divider{
+    align-self:center;
+    padding-bottom:11px;
+    font-size:13px;
+    color:var(--text-muted);
+}
+
+/* Wrapper submit + reset supaya tingginya konsisten (44px, sama
+   dengan input/select) dan selalu sejajar horizontal */
+.date-filter-actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    height:44px;
+}
+
+.date-filter-submit{
+    height:44px;
+    padding:0 22px;
+    border:none;
+    border-radius:12px;
+    background:var(--primary-blue);
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.2s ease;
+}
+
+.date-filter-submit:hover{
+    background:#1d4ed8;
+}
+
+.date-filter-reset{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:44px;
+    padding:0 18px;
+    border-radius:12px;
+    border:1px solid #d1d5db;
+    font-size:14px;
+    font-weight:600;
+    color:var(--text-muted);
+    text-decoration:none;
+    transition:0.2s ease;
+}
+
+.date-filter-reset:hover{
+    background:#f3f4f6;
+    color:var(--text-main);
+}
+
+/* =========================
+   TABLE WRAPPER
+========================= */
+
+.laporan-table-wrapper{
+    width:100%;
+    overflow-x:auto;
+    border:1px solid var(--border-color);
+    border-radius:18px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.laporan-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+.laporan-table thead{
+    background:#f9fafb;
+}
+
+.laporan-table thead th{
+    padding:20px 24px;
+    font-size:14px;
+    font-weight:700;
+    color:#111827;
+    border-bottom:1px solid var(--border-color);
+    white-space:nowrap;
+    vertical-align:middle;
+}
+
+.laporan-table thead th.text-center{
+    text-align:center;
+}
+
+.laporan-table thead th.text-right{
+    text-align:right;
+}
+
+/* =========================
+   TABLE BODY
+========================= */
+
+.laporan-table tbody td{
+    padding:22px 24px;
+    font-size:14px;
+    color:#374151;
+    border-bottom:1px solid #f1f5f9;
+    vertical-align:middle;
+    white-space:nowrap;
+}
+
+.laporan-table tbody tr:hover{
+    background:#fafafa;
+}
+
+/* =========================
+   ALIGNMENT
+========================= */
+
+.text-center{
+    text-align:center;
+}
+
+.text-right{
+    text-align:right;
+}
+
+/* =========================
+   STATUS BADGE
+========================= */
+
+.status-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:8px 14px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+    min-width:95px;
+}
+
+.status-badge.success{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.status-badge.warning{
+    background:#fef3c7;
+    color:#92400e;
+}
+
+.status-badge.danger{
+    background:#fee2e2;
+    color:#991b1b;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.action-buttons form{
+    margin:0;
+}
+
+.btn-action{
+    border:none;
+    border-radius:10px;
+    padding:10px 16px;
+    font-size:13px;
+    font-weight:600;
+    color:#fff;
+    cursor:pointer;
+    transition:0.2s ease;
+}
+
+.btn-action.approve{
+    background:#22c55e;
+}
+
+.btn-action.approve:hover{
+    background:#16a34a;
+}
+
+.btn-action.reject{
+    background:#ef4444;
+}
+
+.btn-action.reject:hover{
+    background:#dc2626;
+}
+
+/* =========================
+   EMPTY DATA
+========================= */
+
+.empty-data{
+    text-align:center;
+    padding:40px !important;
+    color:#9ca3af;
+    font-size:14px;
+}
+
+/* =========================
+   ACTION / DELETE BUTTON
+========================= */
+
+.btn-delete{
+    background:#ef4444;
+    color:#fff;
+    border:none;
+    padding:9px 16px;
+    border-radius:10px;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.2s ease;
+}
+
+.btn-delete:hover{
+    background:#dc2626;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .dashboard-content{
+        padding:18px;
+    }
+
+    .dashboard-card{
+        padding:20px;
+    }
+
+    .laporan-header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .laporan-header h2{
+        font-size:26px;
+    }
+
+    .toggle-filter-btn{
+        width:100%;
+        justify-content:center;
+    }
+
+    .filter-form{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .filter-form select{
+        width:100%;
+    }
+
+    .date-filter-bar{
+        flex-direction:column;
+        align-items:stretch;
+        padding:16px;
+        gap:12px;
+    }
+
+    .date-filter-group input[type="date"],
+    .date-filter-group select{
+        width:100%;
+        min-width:0;
+    }
+
+    .date-filter-divider{
+        display:none;
+    }
+
+    .date-filter-actions{
+        width:100%;
+    }
+
+    .date-filter-submit,
+    .date-filter-reset{
+        flex:1;
+    }
+
+    .laporan-table thead th,
+    .laporan-table tbody td{
+        padding:16px;
+        font-size:13px;
+    }
+
+    .btn-action{
+        padding:8px 12px;
+        font-size:12px;
+    }
+}

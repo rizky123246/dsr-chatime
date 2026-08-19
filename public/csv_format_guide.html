@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Format Guide - Penjualan (26 Columns)</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .format-table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        .format-table th, .format-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .format-table th { background-color: #f2f2f2; }
+        .required { background-color: #fff3cd; }
+        .optional { background-color: #d4edda; }
+        .sample { background-color: #f8f9fa; }
+        .download-btn { background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSV Format Guide - Import Data Penjualan</h1>
+        <p>Berikut adalah format CSV yang diharapkan untuk import data penjualan (26 kolom):</p>
+        
+        <h2>Struktur Kolom (26 Columns)</h2>
+        <table class="format-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Column Name</th>
+                    <th>Required</th>
+                    <th>Format</th>
+                    <th>Contoh</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="required">
+                    <td>1</td>
+                    <td>created_date</td>
+                    <td>✓ Required</td>
+                    <td>YYYY-MM-DD</td>
+                    <td>2024-01-15</td>
+                    <td>Tanggal transaksi</td>
+                </tr>
+                <tr class="required">
+                    <td>2</td>
+                    <td>created_time</td>
+                    <td>✓ Required</td>
+                    <td>HH:MM:SS</td>
+                    <td>10:30:00</td>
+                    <td>Waktu transaksi</td>
+                </tr>
+                <tr class="optional">
+                    <td>3</td>
+                    <td>order_no</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>ORD001</td>
+                    <td>Nomor order (auto-generate jika kosong)</td>
+                </tr>
+                <tr class="optional">
+                    <td>4</td>
+                    <td>receipt_no</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>RCP001</td>
+                    <td>Nomor receipt (auto-generate jika kosong)</td>
+                </tr>
+                <tr class="optional">
+                    <td>5</td>
+                    <td>invoice_reference</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>INV001</td>
+                    <td>Referensi invoice</td>
+                </tr>
+                <tr class="optional">
+                    <td>6</td>
+                    <td>void</td>
+                    <td>Optional</td>
+                    <td>TRUE/FALSE</td>
+                    <td>FALSE</td>
+                    <td>Status void transaksi</td>
+                </tr>
+                <tr class="optional">
+                    <td>7</td>
+                    <td>site_code</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>CGI01</td>
+                    <td>Kode lokasi (default: CGI01)</td>
+                </tr>
+                <tr class="optional">
+                    <td>8</td>
+                    <td>site_description</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>Chatime Grand Indonesia</td>
+                    <td>Nama lokasi</td>
+                </tr>
+                <tr class="optional">
+                    <td>9</td>
+                    <td>article_code</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>PMT001</td>
+                    <td>Kode artikel (auto-generate jika kosong)</td>
+                </tr>
+                <tr class="required">
+                    <td>10</td>
+                    <td>article_name</td>
+                    <td>✓ Required</td>
+                    <td>Text</td>
+                    <td>Pearl Milk Tea</td>
+                    <td>Nama produk</td>
+                </tr>
+                <tr class="required">
+                    <td>11</td>
+                    <td>quantity</td>
+                    <td>✓ Required</td>
+                    <td>Number</td>
+                    <td>2</td>
+                    <td>Jumlah quantity (harus > 0)</td>
+                </tr>
+                <tr class="optional">
+                    <td>12</td>
+                    <td>original_price</td>
+                    <td>Optional</td>
+                    <td>Number</td>
+                    <td>25000</td>
+                    <td>Harga asli (default: net_price)</td>
+                </tr>
+                <tr class="required">
+                    <td>13</td>
+                    <td>net_price</td>
+                    <td>✓ Required</td>
+                    <td>Number</td>
+                    <td>25000</td>
+                    <td>Harga bersih (harus > 0)</td>
+                </tr>
+                <tr class="optional">
+                    <td>14</td>
+                    <td>promotion_amount</td>
+                    <td>Optional</td>
+                    <td>Number</td>
+                    <td>0</td>
+                    <td>Jumlah promo</td>
+                </tr>
+                <tr class="optional">
+                    <td>15</td>
+                    <td>promotion_code</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>PROMO10</td>
+                    <td>Kode promo</td>
+                </tr>
+                <tr class="optional">
+                    <td>16</td>
+                    <td>promotion_name</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>10% Off</td>
+                    <td>Nama promo</td>
+                </tr>
+                <tr class="optional">
+                    <td>17</td>
+                    <td>promotion_channel</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>In-Store</td>
+                    <td>Channel promo</td>
+                </tr>
+                <tr class="optional">
+                    <td>18</td>
+                    <td>department_code</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>BEV001</td>
+                    <td>Kode department</td>
+                </tr>
+                <tr class="optional">
+                    <td>19</td>
+                    <td>department_name</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>Beverages</td>
+                    <td>Nama department</td>
+                </tr>
+                <tr class="optional">
+                    <td>20</td>
+                    <td>commodity_code</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>TEA001</td>
+                    <td>Kode komoditas</td>
+                </tr>
+                <tr class="optional">
+                    <td>21</td>
+                    <td>commodity_name</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>Tea Based</td>
+                    <td>Nama komoditas</td>
+                </tr>
+                <tr class="optional">
+                    <td>22</td>
+                    <td>merchandise_code</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>MTC001</td>
+                    <td>Kode merchandise</td>
+                </tr>
+                <tr class="optional">
+                    <td>23</td>
+                    <td>merchandise_name</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>Milk Tea Category</td>
+                    <td>Nama merchandise</td>
+                </tr>
+                <tr class="optional">
+                    <td>24</td>
+                    <td>product_group_code</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>PMT001</td>
+                    <td>Kode grup produk</td>
+                </tr>
+                <tr class="optional">
+                    <td>25</td>
+                    <td>product_group_name</td>
+                    <td>Optional</td>
+                    <td>Text</td>
+                    <td>Pearl Milk Tea</td>
+                    <td>Nama grup produk</td>
+                </tr>
+                <tr class="optional">
+                    <td>26</td>
+                    <td>[EMPTY]</td>
+                    <td>Optional</td>
+                    <td>-</td>
+                    <td></td>
+                    <td>Kolom ke-26 (dibiarkan kosong)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Contoh CSV Lengkap</h2>
+        <div class="sample">
+            <pre>
+created_date,created_time,order_no,receipt_no,invoice_reference,void,site_code,site_description,article_code,article_name,quantity,original_price,net_price,promotion_amount,promotion_code,promotion_name,promotion_channel,department_code,department_name,commodity_code,commodity_name,merchandise_code,merchandise_name,product_group_code,product_group_name
+2024-01-15,10:30:00,ORD001,RCP001,INV001,FALSE,CGI01,Chatime Grand Indonesia,PMT001,Pearl Milk Tea,2,25000,25000,0,,,BEV001,Beverages,TEA001,Tea Based,MTC001,Milk Tea Category,PMT001,Pearl Milk Tea
+2024-01-15,10:45:00,ORD002,RCP002,INV002,FALSE,CGI01,Chatime Grand Indonesia,BSM001,Brown Sugar Fresh Milk,1,28000,28000,0,PROMO10,10% Off,In-Store,BEV001,Beverages,MLK001,Milk Based,FSM001,Fresh Milk Category,BSM001,Brown Sugar Fresh Milk
+2024-01-15,11:00:00,ORD003,RCP003,INV003,FALSE,CGI01,Chatime Grand Indonesia,CPK001,Chicken Popcorn,1,15000,13500,1500,DISCOUNT10,10% Off,In-Store,FD001,Food,CKN001,Chicken Products,SNK001,Snacks Category,CPK001,Chicken Popcorn
+            </pre>
+        </div>
+
+        <h2>Download Template</h2>
+        <a href="/dashboard/download-penjualan-template" class="download-btn">Download Template CSV</a>
+        
+        <h2>Important Notes</h2>
+        <ul>
+            <li><strong>Kolom wajib:</strong> created_date, created_time, article_name, quantity, net_price</li>
+            <li><strong>Quantity dan net_price harus > 0</strong></li>
+            <li><strong>Tanggal format:</strong> YYYY-MM-DD (contoh: 2024-01-15)</li>
+            <li><strong>Waktu format:</strong> HH:MM:SS (contoh: 10:30:00)</li>
+            <li><strong>Angka format:</strong> Tanpa currency symbols (contoh: 25000, bukan Rp 25.000)</li>
+            <li><strong>Boolean format:</strong> TRUE/FALSE untuk kolom void</li>
+            <li><strong>Kolom opsional akan diisi default jika kosong</strong></li>
+        </ul>
+
+        <h2>Common Issues & Solutions</h2>
+        <table class="format-table">
+            <thead>
+                <tr>
+                    <th>Issue</th>
+                    <th>Cause</th>
+                    <th>Solution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>"Missing required fields"</td>
+                    <td>Kolom wajib kosong atau quantity/net_price = 0</td>
+                    <td>Isi kolom wajib dan pastikan quantity/net_price > 0</td>
+                </tr>
+                <tr>
+                    <td>"Insufficient columns"</td>
+                    <td>Kurang dari 26 kolom</td>
+                    <td>Tambahkan kolom hingga 26 (bisa kosong untuk opsional)</td>
+                </tr>
+                <tr>
+                    <td>"Date parsing failed"</td>
+                    <td>Format tanggal salah</td>
+                    <td>Gunakan format YYYY-MM-DD</td>
+                </tr>
+                <tr>
+                    <td>"Time parsing failed"</td>
+                    <td>Format waktu salah</td>
+                    <td>Gunakan format HH:MM:SS</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
