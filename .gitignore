@@ -28,3 +28,4 @@ debug_errors.php
 check_data.php
 check_exact.php
 analyze_receipts.php
+*:Zone.Identifier
