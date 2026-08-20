@@ -24,7 +24,7 @@ class Pembayaran extends Model
         'receipt_no',
         'invoice_reference',
         'mop_code',
-        'mope_name',
+        'mop_name',
         'source_file',
     ];
 

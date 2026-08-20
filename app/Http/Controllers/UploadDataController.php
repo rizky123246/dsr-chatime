@@ -92,7 +92,7 @@ class UploadDataController extends Controller
                         'receipt_no' => $receiptNo,
                         'invoice_reference' => $invoiceReference ?: null,
                         'mop_code' => $mopCode,
-                        'mope_name' => $mopeName,
+                        'mop_name' => $mopeName,
                         'source_file' => $fileName,
                     ]);
     
