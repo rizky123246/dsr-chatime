@@ -127,11 +127,11 @@ class SalesReportService
             $payments = DB::table('pembayarans')
                 ->whereIn('receipt_no', $receipts)
                 ->selectRaw('
-                    mope_name as payment_method,
+                    mop_name as payment_method,
                     SUM(amount) as total_amount,
                     COUNT(DISTINCT receipt_no) as transaction_count
                 ')
-                ->groupBy('mope_name')
+                ->groupBy('mop_name')
                 ->get();
 
             $rawInstore = 0;
@@ -195,12 +195,12 @@ class SalesReportService
 
             $result = DB::table('pembayarans')
                 ->selectRaw("
-                    SUM(CASE WHEN UPPER(mope_name) LIKE '%SHOPEEFOOD%' THEN amount ELSE 0 END) as shopee,
-                    SUM(CASE WHEN UPPER(mope_name) LIKE '%GOFOOD%' THEN amount ELSE 0 END) as gofood,
-                    SUM(CASE WHEN UPPER(mope_name) LIKE '%GRAB%' THEN amount ELSE 0 END) as grab,
-                    COUNT(DISTINCT CASE WHEN UPPER(mope_name) LIKE '%SHOPEEFOOD%'
-                                      OR UPPER(mope_name) LIKE '%GOFOOD%'
-                                      OR UPPER(mope_name) LIKE '%GRAB%' THEN receipt_no END) as ojol_tc
+                    SUM(CASE WHEN UPPER(mop_name) LIKE '%SHOPEEFOOD%' THEN amount ELSE 0 END) as shopee,
+                    SUM(CASE WHEN UPPER(mop_name) LIKE '%GOFOOD%' THEN amount ELSE 0 END) as gofood,
+                    SUM(CASE WHEN UPPER(mop_name) LIKE '%GRAB%' THEN amount ELSE 0 END) as grab,
+                    COUNT(DISTINCT CASE WHEN UPPER(mop_name) LIKE '%SHOPEEFOOD%'
+                                      OR UPPER(mop_name) LIKE '%GOFOOD%'
+                                      OR UPPER(mop_name) LIKE '%GRAB%' THEN receipt_no END) as ojol_tc
                 ")
                 ->whereIn('receipt_no', $receipts)
                 ->first();
