@@ -1503,7 +1503,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10238428',
                 'name' => 'NC JASMINE GREEN TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1511,7 +1511,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10238429',
                 'name' => 'NC HOUSE BLENDED (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1519,7 +1519,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10238430',
                 'name' => 'NC HOUSE BLENDED (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1551,7 +1551,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239059',
                 'name' => 'NC AMERICANO (C)',
-                'size' => 'c',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -1575,7 +1575,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239062',
                 'name' => 'NC LATTE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1583,7 +1583,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239063',
                 'name' => 'NC CAPPUCCINO (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1591,7 +1591,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239064',
                 'name' => 'NC CAPPUCCINO (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1599,7 +1599,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239065',
                 'name' => 'NC MOCHACCINO (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1607,7 +1607,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239066',
                 'name' => 'NC MOCHACCINO (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1623,7 +1623,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239068',
                 'name' => 'NC VANILLA LATTE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1631,7 +1631,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239069',
                 'name' => 'NC CARAMEL LATTE (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -1639,7 +1639,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239070',
                 'name' => 'NC CARAMEL LATTE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1647,7 +1647,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239071',
                 'name' => 'NC HAZELNUT LATTE (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1655,7 +1655,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239072',
                 'name' => 'NC HAZELNUT LATTE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -1671,7 +1671,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239075',
                 'name' => 'NC ROASTED MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1679,7 +1679,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239077',
                 'name' => 'NC JASMINE MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1695,7 +1695,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239079',
                 'name' => 'NC VANILLA MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1703,7 +1703,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239080',
                 'name' => 'NC CARAMEL MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1711,7 +1711,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239081',
                 'name' => 'NC HAZELNUT MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1719,7 +1719,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239082',
                 'name' => 'NC MATCHA MT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1727,7 +1727,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239083',
                 'name' => 'NC ROASTED TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1735,7 +1735,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10239084',
                 'name' => 'NC BLACK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -1783,7 +1783,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10241856',
                 'name' => 'EARL GREY TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'PREMIUM BREW',
                 'brand' => 'Chatime',
@@ -4655,7 +4655,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10440730',
                 'name' => 'HONEY LEMON C (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'FRUSSION',
                 'brand' => 'Chatime',
@@ -4695,7 +4695,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10441553',
                 'name' => 'CHING GT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'PREMIUM BREW',
                 'brand' => 'Chatime',
@@ -4727,7 +4727,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10441557',
                 'name' => 'SAKURA W/HONEY (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'PREMIUM BREW',
                 'brand' => 'Chatime',
@@ -4759,7 +4759,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10441561',
                 'name' => 'OSMANTHUS TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'PREMIUM BREW',
                 'brand' => 'Chatime',
@@ -4775,7 +4775,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10441563',
                 'name' => 'GREEN TEA W/LEMON (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'PREMIUM BREW',
                 'brand' => 'Chatime',
@@ -4927,7 +4927,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10441647',
                 'name' => 'AT PURE COCOA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE',
                 'brand' => 'Chatime',
@@ -5071,7 +5071,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10441913',
                 'name' => 'AMERICANO (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'CAFFIENATED',
                 'brand' => 'Chatime',
@@ -5175,7 +5175,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10441926',
                 'name' => 'SALTED CARAMEL LAT (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'CAFFIENATED',
                 'brand' => 'Chatime',
@@ -5863,7 +5863,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10449615',
                 'name' => 'KYOTO MATCHA MT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MILKYWAYS',
                 'brand' => 'Chatime',
@@ -5871,7 +5871,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10449616',
                 'name' => 'MILKY MATCHA LAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MILKYWAYS',
                 'brand' => 'Chatime',
@@ -7343,7 +7343,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10461492',
                 'name' => 'KOPI SUSU G AREN (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -10127,7 +10127,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10483516',
                 'name' => 'NC KOPI SUSU G AREN (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Non Cup',
                 'brand' => 'Chatime',
@@ -10239,7 +10239,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10486268',
                 'name' => 'MILKY MATC LAT OAT H',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MILKYWAYS',
                 'brand' => 'Chatime',
@@ -10543,7 +10543,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10486511',
                 'name' => 'LATTE OAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -10591,7 +10591,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10486523',
                 'name' => 'CAPPUCCINO OAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -10687,7 +10687,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10486543',
                 'name' => 'HAZELNUT LAT OAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -10735,7 +10735,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10486549',
                 'name' => 'VANILLA LAT OAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -10783,7 +10783,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10486555',
                 'name' => 'CARAMEL LAT OAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -12359,7 +12359,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10500363',
                 'name' => 'NC CARAMEL OAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Buttelfly',
                 'brand' => 'Chatime',
@@ -12847,7 +12847,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10500718',
                 'name' => 'MATCHA OAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -13991,7 +13991,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10504171',
                 'name' => 'CAPPUCCINO U (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -13999,7 +13999,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10504172',
                 'name' => 'CAPPUCCINO U (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -14015,7 +14015,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10504174',
                 'name' => 'CARAMEL LATTE U (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -14039,7 +14039,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10504177',
                 'name' => 'HAZELNUT LATTE U (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -14063,7 +14063,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10504180',
                 'name' => 'LATTE U (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -14071,7 +14071,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10504181',
                 'name' => 'LATTE U (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -14087,7 +14087,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10504183',
                 'name' => 'MOCHACCINO U (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -14111,7 +14111,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10504186',
                 'name' => 'VANILLA LATTE U (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -14119,7 +14119,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10504187',
                 'name' => 'VANILLA LATTE U (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -14135,7 +14135,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10504189',
                 'name' => 'KOPI G AREN U (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -14575,7 +14575,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10505368',
                 'name' => 'GREEN TEA LAT U (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -14615,7 +14615,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10505373',
                 'name' => 'MATCHA LATTE U (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'UHT',
                 'brand' => 'Chatime',
@@ -16479,7 +16479,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10523972',
                 'name' => 'HONEY LEMON GT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'PREMIUM BREW',
                 'brand' => 'Chatime',
@@ -16487,7 +16487,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10523973',
                 'name' => 'HONEY LEMON BT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'PREMIUM BREW',
                 'brand' => 'Chatime',
@@ -17455,7 +17455,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569447',
                 'name' => 'S CHATIME MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -17463,7 +17463,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569448',
                 'name' => 'S ROASTED MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -17471,7 +17471,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569449',
                 'name' => 'S VANILLA MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -17479,7 +17479,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569450',
                 'name' => 'S CARAMEL MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -17487,7 +17487,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569451',
                 'name' => 'S HAZELNUT MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -17495,7 +17495,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569452',
                 'name' => 'S HAZELNUT CHOCO MT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -17503,7 +17503,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569453',
                 'name' => 'S JASMINE MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -17511,7 +17511,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569454',
                 'name' => 'S MATCHA MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -17519,7 +17519,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569455',
                 'name' => 'S ROASTED TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -17527,7 +17527,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569456',
                 'name' => 'S JASMINE GREEN TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -17535,7 +17535,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569457',
                 'name' => 'S BLACK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -17543,7 +17543,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569458',
                 'name' => 'S SAKURA SENCHA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -17551,7 +17551,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569460',
                 'name' => 'S GREEN TEA LATTE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -17559,7 +17559,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569461',
                 'name' => 'S MATCHA LATTE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -17567,7 +17567,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569462',
                 'name' => 'S TWN PLUM TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MOOD REFRESH',
                 'brand' => 'Chatime',
@@ -17575,7 +17575,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569463',
                 'name' => 'S SOUR PLUM GRN TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MOOD REFRESH',
                 'brand' => 'Chatime',
@@ -17583,7 +17583,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569464',
                 'name' => 'S LEMON GREEN TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MOOD REFRESH',
                 'brand' => 'Chatime',
@@ -17591,7 +17591,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569465',
                 'name' => 'S LEMON BLACK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MOOD REFRESH',
                 'brand' => 'Chatime',
@@ -17599,7 +17599,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569466',
                 'name' => 'S PURE COCOA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MOOD REFRESH',
                 'brand' => 'Chatime',
@@ -17607,7 +17607,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569468',
                 'name' => 'S HONEY MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MOOD REFRESH',
                 'brand' => 'Chatime',
@@ -17615,7 +17615,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569469',
                 'name' => 'S GREEN TEA OAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MOOD REFRESH',
                 'brand' => 'Chatime',
@@ -17623,7 +17623,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10569470',
                 'name' => 'S MATCHA OAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MOOD REFRESH',
                 'brand' => 'Chatime',
@@ -18263,7 +18263,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10579992',
                 'name' => 'S PURE COCOA OAT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MOOD REFRESH',
                 'brand' => 'Chatime',
@@ -18847,7 +18847,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10599593',
                 'name' => 'BERRYBISCOUS TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Atealier Kowis',
                 'brand' => 'Chatime',
@@ -18903,7 +18903,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10601950',
                 'name' => 'T/A BERRYBISCOUS TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Atealier Kowis',
                 'brand' => 'Chatime',
@@ -18943,7 +18943,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10601957',
                 'name' => 'T/A GINGER MILKY LATTE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'ACARAKI',
                 'brand' => 'Chatime',
@@ -18967,7 +18967,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10601960',
                 'name' => 'D/I GINGER MILKY LATTE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'ACARAKI',
                 'brand' => 'Chatime',
@@ -18975,7 +18975,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10601961',
                 'name' => 'KL GINGER MILKY LATTE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'ACARAKI',
                 'brand' => 'Chatime',
@@ -19807,7 +19807,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10623104',
                 'name' => 'T/A CHAMOMILE TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'ACARAKI',
                 'brand' => 'Chatime',
@@ -19815,7 +19815,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10623105',
                 'name' => 'KL CHAMOMILE TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'ACARAKI',
                 'brand' => 'Chatime',
@@ -20727,7 +20727,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10641738',
                 'name' => 'NH S HONEY MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'HONEY',
                 'brand' => 'Chatime',
@@ -21439,7 +21439,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => '10661432',
                 'name' => 'JTM S PURE COCOA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'JTM',
                 'brand' => 'Chatime',
@@ -21895,7 +21895,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000102',
                 'name' => 'MATCHA LATTE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -21919,7 +21919,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000105',
                 'name' => 'SAKURA SENCHA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -22127,7 +22127,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000156',
                 'name' => 'LEMON GREEN TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEARRIFIC',
                 'brand' => 'Chatime',
@@ -22191,7 +22191,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000179',
                 'name' => 'SOUR PLUM GRN TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEARRIFIC',
                 'brand' => 'Chatime',
@@ -22215,7 +22215,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000182',
                 'name' => 'TWN PLUM ICED TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEARRIFIC',
                 'brand' => 'Chatime',
@@ -22263,7 +22263,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000188',
                 'name' => 'JASMINE GREEN TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -22359,7 +22359,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000200',
                 'name' => 'ROASTED TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -22399,7 +22399,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000212',
                 'name' => 'VANILLA LATTE (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -22751,7 +22751,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000444',
                 'name' => 'BLACK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEA PRESSO',
                 'brand' => 'Chatime',
@@ -22791,7 +22791,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000449',
                 'name' => 'LEMON BLACK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'TEARRIFIC',
                 'brand' => 'Chatime',
@@ -22991,7 +22991,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000505',
                 'name' => 'ROASTED MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -23063,7 +23063,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000514',
                 'name' => 'JASMINE MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -23087,7 +23087,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000517',
                 'name' => 'HAZELNUT CHOCO MT (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -23135,7 +23135,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000523',
                 'name' => 'PURE COCOA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'MOOD REFRESH',
                 'brand' => 'Chatime',
@@ -23159,7 +23159,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000526',
                 'name' => 'HOUSE BLEND COFFEE (C)',
-                'size' => 'C',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -23167,7 +23167,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000527',
                 'name' => 'HOUSE BLEND COFFEE (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'Coffee & Latte',
                 'brand' => 'Chatime',
@@ -23375,7 +23375,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000559',
                 'name' => 'CHATIME MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -23399,7 +23399,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000562',
                 'name' => 'HAZELNUT MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -23423,7 +23423,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000565',
                 'name' => 'VANILLA MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
@@ -23447,7 +23447,7 @@ class ProductSeeder extends Seeder
             [
                 'article_code' => 'U000568',
                 'name' => 'CARAMEL MILK TEA (H)',
-                'size' => 'H',
+                'size' => 'S',
                 'type' => 'Drink',
                 'series' => 'SIGNATURE MILK TEA',
                 'brand' => 'Chatime',
