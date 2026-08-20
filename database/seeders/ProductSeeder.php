@@ -846,8 +846,8 @@ class ProductSeeder extends Seeder
             ],
             [
                 'article_code' => '10200601',
-                'name' => 'COCOA FROZTEA (R)',
-                'size' => 'R',
+                'name' => 'COCOA FROZTEA (L)',
+                'size' => 'L',
                 'type' => 'Drink',
                 'series' => 'FROZTEA',
                 'brand' => 'Chatime',
